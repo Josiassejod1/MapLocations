@@ -19,27 +19,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="X5s-Kw-Q8h">
-                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Cag-AB-1vU"/>
                                 </connections>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syG-SJ-8eo">
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pinhead" translatesAutoresizingMaskIntoConstraints="NO" id="SVb-KU-kjJ">
+                                <rect key="frame" x="164" y="291" width="50" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FCe-UK-Z1l"/>
+                                    <constraint firstAttribute="width" constant="40" id="c8H-Qq-5AC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="X5s-Kw-Q8h" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="BCi-ta-xNT"/>
-                            <constraint firstItem="X5s-Kw-Q8h" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MBh-Ba-eAn"/>
-                            <constraint firstItem="X5s-Kw-Q8h" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="PV8-0w-wxT"/>
-                            <constraint firstItem="X5s-Kw-Q8h" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cLu-ar-dZX"/>
+                            <constraint firstItem="X5s-Kw-Q8h" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4ry-CN-Red"/>
+                            <constraint firstItem="syG-SJ-8eo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="50Y-Gu-VLO"/>
+                            <constraint firstItem="X5s-Kw-Q8h" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Hce-aG-EvJ"/>
+                            <constraint firstItem="X5s-Kw-Q8h" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="KlV-cI-CDc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="syG-SJ-8eo" secondAttribute="bottom" id="N0I-WF-gNU"/>
+                            <constraint firstItem="SVb-KU-kjJ" firstAttribute="centerY" secondItem="X5s-Kw-Q8h" secondAttribute="centerY" constant="-20" id="Zdm-YV-Fd8"/>
+                            <constraint firstItem="SVb-KU-kjJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jYA-F4-F6t"/>
+                            <constraint firstItem="X5s-Kw-Q8h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="wt8-Ci-KJe"/>
+                            <constraint firstItem="SVb-KU-kjJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xPC-wD-QmH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="syG-SJ-8eo" id="EHd-3A-Oxm"/>
                         <outlet property="mapView" destination="X5s-Kw-Q8h" id="bYl-v1-pJz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="68" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pinhead" width="192" height="192"/>
+    </resources>
 </document>
